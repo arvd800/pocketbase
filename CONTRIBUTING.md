@@ -75,11 +75,7 @@ To start the Superuser UI:
 
 You could open the browser and access the running Superuser UI at `http://localhost:5173`.
 
-Since the Superuser UI is just a client-side application, you need to have the PocketBase backend server also running in the background (either manually running the `examples/base/main.go` or download a prebuilt executable).
+Since the Superuser UI is just a client-side application, you need to have the PocketBase backend server also running in the background (either manually
+started via `go run main.go serve` from `examples/base`, or using a prebuilt executable).
 
-> [!NOTE]
-> By default, the Superuser UI is expecting the backend server to be started at `http://localhost:8090`, but you could change that by creating a new `ui/.env.development.local` file with `PB_BACKEND_URL = YOUR_ADDRESS` variable inside it.
-
-Every change you make in the Superuser UI should be automatically reflected in the browser at `http://localhost:5173` without reloading the page.
-
-Once you are done with your changes, you have to build the Superuser UI with `npm run build`, so that it can be embedded in the go package. And that's it - you can make your PR to the main PocketBase repository.
+> **Personal note:** When working on UI changes locally, I find it useful to run the backend with `--dev` flag (`go run main.go serve --dev`) to get more verbose logs and disable some caching.
