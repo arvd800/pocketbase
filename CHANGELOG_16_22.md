@@ -3,6 +3,9 @@
 
 > **Personal note:** I maintain this fork primarily for learning purposes and to track backported security fixes.
 > If you're using this fork, I recommend always checking the upstream [pocketbase/pocketbase](https://github.com/pocketbase/pocketbase) for the latest changes.
+>
+> **Backport policy:** I only backport security-related fixes and critical bug fixes to the v0.22.x line.
+> Minor features and non-critical improvements from newer versions are generally not backported.
 
 ---
 
@@ -56,5 +59,4 @@
 
 - (_Backported from v0.34.1_) - Added missing `:` char to the autocomplete regex ([#7353](https://github.com/pocketbase/pocketbase/pull/7353)).
 
-- (_Backported from v0.34.1_) Bumped min Go GitHub action version to 1.25.5 because it comes with some [minor security fixes](https://github.com/golang/go/issues?q=milestone%3AGo1.25.5).
-    _The runner action was also updated to `actions/setup-go@v6` since the previous v5 Go source seems [no longer accessible](https://g
+- (_Backported from v0.34.1_) Bumped min Go Gi
