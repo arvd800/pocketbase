@@ -75,7 +75,6 @@ To start the Superuser UI:
 
 You could open the browser and access the running Superuser UI at `http://localhost:5173`.
 
-Since the Superuser UI is just a client-side application, you need to have the PocketBase backend server also running in the background (either manually
-started via `go run main.go serve` from `examples/base`, or using a prebuilt executable).
+Since the Superuser UI is just a client-side application, you need to have the PocketBase backend server also running in the background (either manually via `go run main.go serve` from `examples/base`, or using a prebuilt executable).
 
-> **Personal note:** When working on UI changes locally, I find it useful to run the backend with `--dev` flag (`go run main.go serve --dev`) to get more verbose logs and disable some caching.
+> **Personal note:** I find it easiest to run the backend in one terminal and the UI dev server in another, then use the UI at `http://localhost:5173` which proxies API calls to `http://localhost:8090`.
