@@ -29,8 +29,8 @@ func main() {
 	})
 
 	// Start the application; arguments are read from os.Args by default.
+	// Using log.Fatal instead of manual log+exit for cleaner error handling.
 	if err := app.Start(); err != nil {
-		log.Println(err)
-		os.Exit(1)
+		log.Fatal(err)
 	}
 }
