@@ -38,8 +38,8 @@
     ```sh
     # note: --dir is optional and defaults to pb_data next to the executable
     # personal note: always run this before deploying to a new server to avoid lockout
+    # personal note: also useful to run after changing VPN/proxy settings that affect your outbound IP
 
     # clear whitelisted IPs
-    ./pocketbase superuser ips --dir=/custom/path/to/pb_data
-
-    # OR change the whitelisted IPs to 127.0.0.1 and 10.0.0.0 (replace with your
+    ./pocketbase superuser ips --dir=/custom/path/to/pb
+```
